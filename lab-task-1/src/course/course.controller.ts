@@ -6,26 +6,26 @@ export class CourseController {
     constructor(private readonly courseService: CourseService) {}
     @Get()
     getAllCourses():string{
-        return "Test"
+        return this.courseService.getAllCourses();
     }
     @Get(":id")
     getCourseById(id:string):string{
-        return "Get course by id";
+        return this.courseService.getCourseById();
     }
     @Post()
     createCourse():string{
-        return "";
+        return this.courseService.createCourse();
     }
     @Put(":id")
     updateCourse():string{
-        return "";
+        return this.courseService.updateCourse();
     }
     @Patch(":id")
     patchCourse():string{
-        return "";
+        return this.courseService.patchCourse();
     }
     @Delete(":id")
     deleteCourse():string{
-        return "";
+        return this.courseService.deleteCourse();
     }
 }
