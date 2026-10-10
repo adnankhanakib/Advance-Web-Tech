@@ -6,18 +6,18 @@ export class CourseService {
         return "Get All Courses - from Service"
     }
     getCourseById(id:string):string{
-        return "Get course with ID: 10 - from Service"
+        return "Get course with ID "+id+" - from Service"
     }
     createCourse():string{
         return "Create course - from Service"
     }
     updateCourse(id:string):string{
-        return "Update Course 10 - from Service"
+        return "Update Course "+id+" - from Service"
     }
     patchCourse(id:string):string{
-        return "Patch Course 10 - from Service"
+        return "Patch Course "+id+" - from Service"
     }
     deleteCourse(id:string):string{
-        return "Delete Course 10 - from Service"
+        return "Delete Course "+id+" - from Service"
     }
 }
